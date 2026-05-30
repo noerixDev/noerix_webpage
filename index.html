@@ -298,6 +298,27 @@
     line-height: 1.5;
   }
 
+  /* ── WHAT'S NEXT ── */
+  .next-note {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: var(--ink-hint);
+    text-transform: uppercase;
+  }
+
+  .next-note::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 0.5px;
+    background: var(--ink-hint);
+  }
+
   /* ── ABOUT ── */
   #about { background: var(--paper); }
 
@@ -541,7 +562,7 @@
 <nav>
   <a href="#home" class="nav-logo">Noerix<span>.</span></a>
   <ul class="nav-links">
-    <li><a href="#products">Products</a></li>
+    <li><a href="#products">Product</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -552,7 +573,7 @@
   <div class="container">
     <p class="hero-label">Noerix OÜ — Tallinn, Estonia</p>
     <h1 class="hero-h1">Building technology that brings people together <em>in the real world.</em></h1>
-    <p class="hero-sub">We develop intelligent location-based experiences. Our flagship product, Meet Around, helps people discover and join real-time activities happening near them.</p>
+    <p class="hero-sub">Noerix is a young technology startup creating products for the way people actually live and connect. Our first, Meet Around, helps people discover and join real-time activities happening near them.</p>
     <a href="https://meet-around.com" target="_blank" rel="noopener" class="btn-primary">
       Explore Meet Around <span class="arrow">→</span>
     </a>
@@ -565,19 +586,19 @@
 <!-- PRODUCTS -->
 <section id="products">
   <div class="container">
-    <p class="section-eyebrow">Our product</p>
-    <h2 class="section-h2">One flagship. Built from the ground up.</h2>
+    <p class="section-eyebrow">Our first product</p>
+    <h2 class="section-h2">Meet Around. Where we started.</h2>
 
     <div class="product-card">
       <div class="product-card-left">
-        <p class="product-name">Meet Around — Flagship</p>
+        <p class="product-name">Meet Around — Our first product</p>
         <h3 class="product-headline">Real-time social discovery for the physical world.</h3>
-        <p class="product-desc">A map-based mobile platform that surfaces spontaneous, location-based activities around you. Meet Around uses AI to connect people with what's happening nearby — and gives businesses and event organizers the tools to reach local audiences in the moment.</p>
+        <p class="product-desc">A map-based mobile platform that surfaces spontaneous, location-based activities around you. Meet Around connects people with what's happening nearby — and gives businesses and event organizers the tools to reach local audiences in the moment.</p>
         <div class="product-tags">
           <span class="tag">iOS</span>
           <span class="tag">Android</span>
           <span class="tag">Location intelligence</span>
-          <span class="tag">AI-powered</span>
+          <span class="tag">Real-time</span>
           <span class="tag">B2C + B2B</span>
         </div>
         <a href="https://meet-around.com" target="_blank" rel="noopener" class="btn-secondary">
@@ -595,7 +616,7 @@
         </div>
         <div class="product-stat">
           <p class="stat-label">Core technology</p>
-          <p class="stat-value">Real-time geospatial processing, AI recommendation, map-based UX</p>
+          <p class="stat-value">Real-time geospatial processing, intelligent recommendations, map-based UX</p>
         </div>
         <div class="product-stat">
           <p class="stat-label">Serves</p>
@@ -603,6 +624,8 @@
         </div>
       </div>
     </div>
+
+    <p class="next-note">More products in the works</p>
   </div>
 </section>
 
@@ -612,14 +635,14 @@
 <section id="about">
   <div class="container">
     <p class="section-eyebrow">About Noerix</p>
-    <h2 class="section-h2">A technology company with a clear focus.</h2>
+    <h2 class="section-h2">A technology company building for the real world.</h2>
 
     <div class="about-grid">
       <div class="about-left">
         <div class="about-body">
-          <p>Noerix OÜ is a technology company incorporated in Estonia, building products at the intersection of location intelligence, artificial intelligence, and social discovery.</p>
-          <p>Our mission is to make spontaneous human connection easier — closing the gap between the digital world and the places where people actually live, work, and meet. We build tools that are fast, intelligent, and grounded in the real world.</p>
-          <p>Everything we build is designed to scale globally from day one, with privacy-respecting architecture and AI embedded at the core — not bolted on as a feature.</p>
+          <p>Noerix OÜ is a technology startup incorporated in Estonia, building products at the intersection of technology, design, and human connection.</p>
+          <p>Our mission is to make spontaneous human connection easier — closing the gap between the digital world and the places where people actually live, work, and meet. Meet Around is our first step, and we're just getting started.</p>
+          <p>We don't limit ourselves to a single category. Wherever there's a chance to bring people together through better technology, that's where we want to build — thoughtfully, and with the user's trust at the core.</p>
         </div>
 
         <div class="values-grid">
@@ -630,8 +653,8 @@
           </div>
           <div class="value-card">
             <p class="value-number">02</p>
-            <p class="value-title">Intelligent by design</p>
-            <p class="value-desc">AI is embedded in the core of our products, not added as an afterthought.</p>
+            <p class="value-title">Built with intent</p>
+            <p class="value-desc">Every product starts from a real need, not a trend. We ship things people actually use.</p>
           </div>
           <div class="value-card">
             <p class="value-number">03</p>
@@ -640,8 +663,8 @@
           </div>
           <div class="value-card">
             <p class="value-number">04</p>
-            <p class="value-title">Built to scale</p>
-            <p class="value-desc">Our architecture and thinking are global from day one.</p>
+            <p class="value-title">Built to grow</p>
+            <p class="value-desc">One product today, more to come. Our thinking is global from day one.</p>
           </div>
         </div>
       </div>
@@ -698,7 +721,7 @@
           </div>
           <div class="contact-row">
             <span class="contact-type">Meet Around support</span>
-            <a href="mailto:support@meet-around.com" class="contact-value">support@meet-around.com</a>
+            <a href="mailto:meet-support@meet-around.com" class="contact-value">meet-support@meet-around.com</a>
           </div>
           <div class="contact-row">
             <span class="contact-type">Product website</span>
@@ -735,7 +758,7 @@
   <div class="footer-inner">
     <a href="#home" class="footer-logo">Noerix<span>.</span></a>
     <ul class="footer-links">
-      <li><a href="#products">Products</a></li>
+      <li><a href="#products">Product</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#" onclick="document.getElementById('privacy-overlay').style.display='flex'; return false;">Privacy Policy</a></li>
